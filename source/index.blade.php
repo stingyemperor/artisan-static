@@ -5,6 +5,6 @@
 
     <p>This website contains the developments for my course project.</p>
 
-    <p>Different reports of the project can be accessed from the post page.</p>
+    <p>Different reports of the project can be accessed from the Posts page.</p>
 
 @endsection
