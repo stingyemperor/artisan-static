@@ -21,4 +21,17 @@
         <em>WARNING: This post is over a year old. Some of the information this contains may be outdated.</em>
     </blockquote>
 
+    <hr>
+
+    @yield('postContent')
+
+    <hr>
+
+    @include('_partials.share')
+
+    @if ($page->comments)
+        @include('_partials.comments')
+    @else
+        <p>Comments are not enabled for this post.</p>
+    @endif
 @endsection
