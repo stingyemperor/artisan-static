@@ -4,16 +4,16 @@ return [
     'production' => false,
     'baseUrl' => 'https://artisanstatic.netlify.app',
     'site' => [
-        'title' => 'My Jigsaw Blog',
+        'title' => 'CSCE-645 Project',
         'description' => 'Personal blog of John Doe.',
         'image' => 'default-share.png',
     ],
     'owner' => [
-        'name' => 'John Doe',
+        'name' => 'Samraat Gupta',
     ],
     'links' => [
-        'twitter' => 'https://twitter.com/johndoe',
-        'github' => 'https://github.com/johndoe',
+        //'twitter' => 'https://twitter.com/johndoe',
+        'github' => 'https://github.com/stingyemperor/artisan-static',
     ],
     'services' => [
         'cmsVersion' => '~2.10',
