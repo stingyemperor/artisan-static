@@ -4,19 +4,6 @@ date: 2021-10-4
 comments: false
 ---
 
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 5.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
 ### **Literature Review**
 
 Since sketch based modelling is the hardest part of my proposed project, most of the research papers discussed are based on that topic.
@@ -35,7 +22,7 @@ One of the  first sketch based interface we discuss is Teddy[Igarashi et al., 19
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](./images/image1.png "image_tooltip")
+![a](./images/image1.png)
 
 
 
@@ -50,7 +37,7 @@ Rivers et al [Rivers et al, 2010] proposes an approach in which models are inter
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image2.png "image_tooltip")
+![b](images/image2.png)
 
 
 
@@ -67,7 +54,7 @@ and tries to eliminate menus. The system relies heavily on a stroke inference en
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image3.png "image_tooltip")
+![c](images/image3.png)
  
 
 A system that builds on ILoveSketch [Bae et al, 2008] is JustDDrawIt[Grimm & Joshi, 2012] . JustDrawIt has many of the same features as ILoveSketch and add systems that enable convenient editing of existing curves. It also has in built visualizations aids like shadows and depth-based shading. JustDrawIt can be viewed as three different systems put together. A 2-D sketching system, 3-D curve editing system and 3-D surfacing. The main drawback of this system is that it seems to have a high learning curve and does not provide any tests on inexperienced users, as noted in [Kazmi et al., 2014].
@@ -86,7 +73,7 @@ A similar CNN based model is proposed in [Li et al., 2018].  [Li et al., 2018] u
 <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image4.png "image_tooltip")
+![d](images/image4.png)
 
 
 Another easy-to-use proposal is presented by [Jin et al,2020].[Jin et al,2020] constructs the 3-D model by using  three silhouettes from the front,side and top view. It proposes a space that jointly embeds both 2-D  occluding contours and 3-D shapes via a variational autoencoder. Since the 3-D models are generated directly from the contour, it is very user friendly and can be expanded to generate complicated models with additional inputs. 
@@ -98,7 +85,7 @@ In terms of user interface, I want to point out the paper [Wailly et al, 2019] w
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image5.png "image_tooltip")
+![e](images/image5.png)
 
 
 
