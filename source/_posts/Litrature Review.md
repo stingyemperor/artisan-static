@@ -65,7 +65,7 @@ A similar CNN based model is proposed in [Li et al., 2018].  [Li et al., 2018] u
 
 
 
-<img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/image1.png" alt="drawing" width="400"/>
+<img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/image1.png" alt="drawing" width="800"/>
 
 
 Another easy-to-use proposal is presented by [Jin et al,2020].[Jin et al,2020] constructs the 3-D model by using  three silhouettes from the front,side and top view. It proposes a space that jointly embeds both 2-D  occluding contours and 3-D shapes via a variational autoencoder. Since the 3-D models are generated directly from the contour, it is very user friendly and can be expanded to generate complicated models with additional inputs. 

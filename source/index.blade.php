@@ -7,4 +7,7 @@
 
     <p>Different reports of the project can be accessed from the Posts page.</p>
 
+
+    <img src="" width="280" height="125" title="Logo of a company" alt="Logo of a company" />
+
 @endsection
