@@ -19,8 +19,6 @@ One of the  first sketch based interface we discuss is Teddy[Igarashi et al., 19
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![a](image1.png)
 
@@ -32,9 +30,6 @@ Multi view systems use two or more images taken at different views to construct 
 
 Rivers et al [Rivers et al, 2010] proposes an approach in which models are interactively designed by drawing their 2-D silhouettes, thus eliminating the need for the user to have the ability to position 3-D elements. This approach is capable of producing highly detailed models with relatively simple sketches. The system targets objects that can typically be expressed as axis-aligned subparts. The resulting models are fairly detailed and produce excellent results in certain cases.The main drawback of this approach is that multiple 2-D sketches  from different views are required in order to make the 3-D model, which is slow and also requires the user to have the ability to describe the object from multiple orthographic views.
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![b](images/image2.png)
@@ -51,7 +46,6 @@ and tries to eliminate menus. The system relies heavily on a stroke inference en
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![c](images/image3.png)
@@ -70,8 +64,6 @@ A similar CNN based model is proposed in [Li et al., 2018].  [Li et al., 2018] u
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![d](images/image4.png)
 
@@ -81,8 +73,6 @@ Another easy-to-use proposal is presented by [Jin et al,2020].[Jin et al,2020] c
 In terms of user interface, I want to point out the paper [Wailly et al, 2019] which presents the user with a 3-D grid to draw on and uses two CNN networks, one for classification and one for parameter estimation, to predict the position and dimension of the recognized shape. The 3-D grid interface is rendered from a ¾ bird’s eye viewpoint which I think is a good balance between complexity and ease of access.
 
 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![e](images/image5.png)
