@@ -47,8 +47,8 @@ and tries to eliminate menus. The system relies heavily on a stroke inference en
 
 
 
+<img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image2.png" alt="drawing" width="400"/>
 
-![image text](https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image2.png "image Title")
  
 
 A system that builds on ILoveSketch [Bae et al, 2008] is JustDDrawIt[Grimm & Joshi, 2012] . JustDrawIt has many of the same features as ILoveSketch and add systems that enable convenient editing of existing curves. It also has in built visualizations aids like shadows and depth-based shading. JustDrawIt can be viewed as three different systems put together. A 2-D sketching system, 3-D curve editing system and 3-D surfacing. The main drawback of this system is that it seems to have a high learning curve and does not provide any tests on inexperienced users, as noted in [Kazmi et al., 2014].
@@ -65,7 +65,7 @@ A similar CNN based model is proposed in [Li et al., 2018].  [Li et al., 2018] u
 
 
 
-![image text](https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image1.png "image Title")
+<img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/image1.png" alt="drawing" width="400"/>
 
 
 Another easy-to-use proposal is presented by [Jin et al,2020].[Jin et al,2020] constructs the 3-D model by using  three silhouettes from the front,side and top view. It proposes a space that jointly embeds both 2-D  occluding contours and 3-D shapes via a variational autoencoder. Since the 3-D models are generated directly from the contour, it is very user friendly and can be expanded to generate complicated models with additional inputs. 
