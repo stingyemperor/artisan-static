@@ -8,6 +8,6 @@
     <p>Different reports of the project can be accessed from the Posts page.</p>
 
 
-    <img src="" width="280" height="125" title="Logo of a company" alt="Logo of a company" />
+    <img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/ezgif.com-gif-maker.gif" width="650" height="488" title="Logo of a company" alt="Logo of a company" />
 
 @endsection
