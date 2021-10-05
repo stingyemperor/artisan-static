@@ -19,8 +19,8 @@ One of the  first sketch based interface we discuss is Teddy[Igarashi et al., 19
 
 
 
+<img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image3.png" alt="drawing" width="400"/>
 
-![image text](https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image2.png "image Title")
 
 
 
@@ -32,7 +32,7 @@ Rivers et al [Rivers et al, 2010] proposes an approach in which models are inter
 
 
 
-![b](images/image2.png)
+![image text](https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image4.png "image Title")
 
 
 
@@ -48,7 +48,7 @@ and tries to eliminate menus. The system relies heavily on a stroke inference en
 
 
 
-![c](images/image3.png)
+![image text](https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image2.png "image Title")
  
 
 A system that builds on ILoveSketch [Bae et al, 2008] is JustDDrawIt[Grimm & Joshi, 2012] . JustDrawIt has many of the same features as ILoveSketch and add systems that enable convenient editing of existing curves. It also has in built visualizations aids like shadows and depth-based shading. JustDrawIt can be viewed as three different systems put together. A 2-D sketching system, 3-D curve editing system and 3-D surfacing. The main drawback of this system is that it seems to have a high learning curve and does not provide any tests on inexperienced users, as noted in [Kazmi et al., 2014].
@@ -65,7 +65,7 @@ A similar CNN based model is proposed in [Li et al., 2018].  [Li et al., 2018] u
 
 
 
-![d](images/image4.png)
+![image text](https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image1.png "image Title")
 
 
 Another easy-to-use proposal is presented by [Jin et al,2020].[Jin et al,2020] constructs the 3-D model by using  three silhouettes from the front,side and top view. It proposes a space that jointly embeds both 2-D  occluding contours and 3-D shapes via a variational autoencoder. Since the 3-D models are generated directly from the contour, it is very user friendly and can be expanded to generate complicated models with additional inputs. 
@@ -75,7 +75,7 @@ In terms of user interface, I want to point out the paper [Wailly et al, 2019] w
 
 
 
-![e](images/image5.png)
+![image text](https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image5.png "image Title")
 
 
 
@@ -85,21 +85,15 @@ In terms of user interface, I want to point out the paper [Wailly et al, 2019] w
 
 [Kazmi et al., 2014] **I. K. Kazmi, L. You and J. J. Zhang**, "A Survey of Sketch Based Modeling Systems," 2014 11th International Conference on Computer Graphics, Imaging and Visualization, 2014, pp. 27-36
 
- [Bonnici et al, 2019] **Bonnici, A., Akman, A., Calleja, G., Camilleri, K., Fehling, P., Ferreira, A., . . . Rosin, P. (2019)**. Sketch-based interaction and modeling: Where do we stand? Artificial Intelligence for Engineering Design, Analysis and Manufacturing, 33(4), 370-388. doi:10.1017/S0890060419000349
+[Bonnici et al, 2019] **Bonnici, A., Akman, A., Calleja, G., Camilleri, K., Fehling, P., Ferreira, A., . . . Rosin, P. (2019)**. Sketch-based interaction and modeling: Where do we stand? Artificial Intelligence for Engineering Design, Analysis and Manufacturing, 33(4), 370-388. doi:10.1017/S0890060419000349
 
-[Nealen et al., 2007] **Nealen A, Igarashi T, Sorkine O and Alexa M (2007)** Fibermesh: designing
-
-free-form surfaces with 3D curves. ACM Transactions on Graphics 26,
-
-41.1–41.9
+[Nealen et al., 2007] **Nealen A, Igarashi T, Sorkine O and Alexa M (2007)** Fibermesh: designing free-form surfaces with 3D curves. ACM Transactions on Graphics 26,41.1–41.9
 
 [Rivers et al, 2010] **Rivers, Alec, Frédo Durand, and Takeo Igarashi(2010)**. 3D modeling with silhouettes. Vol. 29, no. 4. ACM, 2010
 
 [Bae et al, 2008] **Bae, Seok-Hyung, Ravin Balakrishnan, and Karan Singh(2008)**. "ILoveSketch: as-natural-as-possible sketching system for creating 3d curve models." In Proceedings of the 21st annual ACM symposium on User interface software and technology, pp. 151-160. ACM, 2008.
 
 [Grimm & Joshi, 2012] **Grimm, Cindy, and Pushkar Joshi(2012)**. "Just Draw it! a 3D Sketching System." In 9th Eurographics symposium on sketch-based interfaces and modeling, pp. 1-14. 2012.
-
-  
 
 [Zhong et al, 2021] **Y. Zhong, Y. Gryaditskaya, H. Zhang and Y. -Z. Song**, "Deep Sketch-Based Modeling: Tips and Tricks," 2020 International Conference on 3D Vision (3DV), 2020, pp. 543-552, doi: 10.1109/3DV50981.2020.00064.
 
