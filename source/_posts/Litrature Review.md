@@ -20,7 +20,7 @@ One of the  first sketch based interface we discuss is Teddy[Igarashi et al., 19
 
 
 
-![a](image1.png)
+![image text](https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image2.png "image Title")
 
 
 
