@@ -9,10 +9,10 @@ I was having trouble going from sketches to 3-D models since there are many vari
 
 
 
-<img src="https://github.com/stingyemperor/artisan-static/blob/master/source/_posts/images/air.PNG" alt="drawing" width="400"/>
+<img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/air.PNG" alt="drawing" width="400"/>
 
 
-<img src="https://github.com/stingyemperor/artisan-static/blob/master/source/_posts/images/air2.PNG" alt="drawing" width="400"/>
+<img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/air2.PNG" alt="drawing" width="400"/>
 
 
 
