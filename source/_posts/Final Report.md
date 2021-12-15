@@ -48,7 +48,7 @@ For now, I have two working tools-
 
 * Convert the user's  2-D sketch to a mesh object
   
-![](https://youtu.be/rbyxzaf-lf4)
+<img src="https://youtu.be/rbyxzaf-lf4" alt="drawing" width="400"/>
 
 * Subtract the overlapping area based on the user's sketch
 
