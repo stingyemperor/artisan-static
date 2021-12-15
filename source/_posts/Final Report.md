@@ -65,7 +65,7 @@ For now, I have three working tools-
 
 
 
-<img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image3.png" alt="drawing" width="400"/>
+<img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/Illustration.png" alt="drawing" width="400"/>
 
 Procedure for finding the overshot line-
 
