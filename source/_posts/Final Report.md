@@ -30,7 +30,12 @@ Sketch based modelling systems can be divided into 4 categories according to [Ka
 
 “Teddy:A skating interface for 3D free-form design”[Igarashi et al., 2006] is one of the first and the biggest single view modelling system. It pioneered the research in inflated geometrical surfaces, one of the recent papers that use inflated geometrical surfaces is “Monster Mash: A Single-View Approach to Casual 3D Modeling and Animation”[Dvorožňák et al., 2020]. While teddy is good for modelling organic models like a plush toy, it is not very useful for modelling shapes with sharp features like a cube.
 
-In recent years, there have many papers that apply Deep learning to sketch based modelling.[Delanoy et a., 2018]
+In recent years, there have many papers that apply Deep learning to sketch based modelling.[Delanoy et al., 2018] predicts encodes 3D shape in a voxel representation and estimate the probability of each voxel to be occupied[Zhong., et al. 2020].
+
+I also want to mention a new software which is currently in Beta but looks very promising called plasmo.ai
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TknOTV43uf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### <span style="text-decoration:underline;">Implementation Details</span>
@@ -48,11 +53,15 @@ For now, I have two working tools-
 
 * Convert the user's  2-D sketch to a mesh object
   
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QvEz8_wcjTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rbyxzaf-lf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 * Subtract the overlapping area based on the user's sketch
-
+  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QvEz8_wcjTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  
+* Add to current mesh based on the user’s sketch
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ToFyUUjBiXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The algorithm for the Draw method-
 
@@ -74,14 +83,26 @@ The algorithm for the Subtract method-
 3. Use the Boolean difference operator to subtract the original mesh from the subtraction mesh
 
 
+
+The algorithm for the Union method-
+1. Same steps as subtract but use Union instead of difference
+
+
 ### <span style="text-decoration:underline;">Challenges</span>
 
 
 
 * Initially, I was trying to use a deep learning based which included training a GAN on 3D models based on [Wu et al., 2016] but I could not understand how to generalize it for free form shapes. So in order to have some results for this project, I decided to implement it in blender instead.
-* The d
+* Blenders’s python API is poorly documented, so I had to experiment a lot in order to find how scripts were to be written
+* The trickiest case is when there are a bunch of overshot lines, and we need to be able to identify and ignore them. My current implementation does not work perfectly and sometimes are some extra edges remaining
 
  
+### <span style="text-decoration:underline;">Results</span>
+
+Overall, I would not say that my results are particularly new, as there are other programs out there that have more functions[Bae., et al. 2008], but most of them are discontinued or not commercially available. As far as blender goes, I could not find any tool that does what my implemented program does. 
+In its current state, the program lacks all the necessary tools to be a useful tool, but I believe that once I fix some inconsistencies and add a better way to control the depth of the created object, it can be a useful tool for concept artists and people new to 3D modelling software.
+
+I would say that I did not achieve the goals I set. I believe that the main reason is that I was not able to get any good results with my initial approach of utilizing deep learning, and thus I did not have much time left to experiment with blender to get satisfactory results.
 
 	
 
@@ -95,3 +116,8 @@ The algorithm for the Subtract method-
 [Dvorožňák et al., 2020]Marek Dvorožňák, Daniel Sýkora, Cassidy Curtis, Brian Curless, Olga Sorkine-Hornung, and David Salesin. 2020. Monster mash: a single-view approach to casual 3D modeling and animation. ACM Trans. Graph. 39, 6, Article 214 (December 2020), 12 pages. DOI:[https://doi.org/10.1145/3414685.3417805](https://doi.org/10.1145/3414685.3417805)
 
 [Wu et al., 2016]Jiajun Wu, Chengkai Zhang, Tianfan Xue, William T. Freeman, and Joshua B. Tenenbaum. 2016. Learning a probabilistic latent space of object shapes via 3D generative-adversarial modeling. In Proceedings of the 30th International Conference on Neural Information Processing Systems (NIPS'16). Curran Associates Inc., Red Hook, NY, USA, 82–90.
+
+[Bae., et al 2008]Seok-Hyung Bae, Ravin Balakrishnan, and Karan Singh. 2008. ILoveSketch: as-natural-as-possible sketching system for creating 3d curve models. In Proceedings of the 21st annual ACM symposium on User interface software and technology (UIST '08). Association for Computing Machinery, New York, NY, USA, 151–160. DOI:https://doi.org/10.1145/1449715.1449740
+
+
+[Zhong., et al 2020]Zhong, Yue, Yulia Gryaditskaya, Honggang Zhang and Yi-Zhe Song. “Deep Sketch-Based Modeling: Tips and Tricks.” 2020 International Conference on 3D Vision (3DV) (2020): 543-552.
