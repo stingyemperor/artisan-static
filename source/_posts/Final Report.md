@@ -3,7 +3,7 @@ title: 'Final Report'
 date: 2021-12-15
 comments: false
 ---
-## Final Report
+## Sketch Based 3D Modelling
 
 
 ### <span style="text-decoration:underline;">Motivation</span>
@@ -47,6 +47,11 @@ For now, I have two working tools-
 
 
 * Convert the user's  2-D sketch to a mesh object
+  
+<figure class="video_container">
+  <iframe src="https://drive.google.com/file/d/1z_75izrXkawTcXYjuuFk4v-aBEznU-K8/view?usp=sharing" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
 * Subtract the overlapping area based on the user's sketch
 
  
