@@ -8,7 +8,7 @@ comments: false
 
 ### <span style="text-decoration:underline;">Motivation</span>
 
-In recent years, digital painting programs like photoshop and clip studio paint  have been gaining popularity and the programs have been adding functionality to help users draw easily, for example adding perspective guidelines to help draw objects in perspective. One of the areas where I think the programs can improve is having 3d models for shading reference. Most programs do not provide this functionality or have limited functionality in this area, for example Clip studio paint provides 3d models, but the number of models are limited and there is no way to create custom models. Thus, a way for the user to easily create free-form 3D models would be very helpful.
+In recent years, digital painting programs like photoshop and clip studio paint  have been gaining popularity and the programs have been adding functionality to help users draw easily, for example adding perspective guidelines to help draw objects in perspective. One of the areas where I think the programs can improve is having 3d models for shading reference. Most programs do not provide this functionality or have limited functionality in this area, for example Clip studio paint provides 3d models, but the number of models are limited and there is no way to create custom models. Thus, a way for the user to easily create free-form 3D models would be very helpful in speeding up the users workflow.
 
 
 ### <span style="text-decoration:underline;">Objective</span>
@@ -67,7 +67,7 @@ For now, I have three working tools-
 
 <img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/Illustration.png" alt="drawing" width="400"/>
 
-Procedure for finding the overshot line-
+Procedure for detecting and removing the overshot lines-
 
 1. In most cases overshot lines are the shortest edges
 2. Select all points with four edges
