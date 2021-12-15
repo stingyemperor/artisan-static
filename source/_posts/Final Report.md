@@ -48,7 +48,7 @@ For now, I have two working tools-
 
 * Convert the user's  2-D sketch to a mesh object
   
-<img src="https://youtu.be/rbyxzaf-lf4" alt="drawing" width="400"/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QvEz8_wcjTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 * Subtract the overlapping area based on the user's sketch
 
