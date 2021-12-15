@@ -28,7 +28,7 @@ Sketch based modelling systems can be divided into 4 categories according to [Ka
 
 #### <span style="text-decoration:underline;">Single-View Systems</span>
 
-“Teddy:A skating interface for 3D free-form design”[Igarashi et al., 2006] is one of the first and the biggest single view modelling system. It pioneered the research in inflated geometrical surfaces, one of the recent papers that use inflated geometrical surfaces is “Monster Mash: A Single-View Approach to Casual 3D Modeling and Animation”[Dvorožňák et al., 2020]. While teddy is good for modelling organic models like a plush toy, it is not very useful for modelling shapes with sharp features like a cube.
+“Teddy:A sketching interface for 3D free-form design”[Igarashi et al., 2006] is one of the first and the biggest single view modelling system. It pioneered the research in inflated geometrical surfaces, one of the recent papers that use inflated geometrical surfaces is “Monster Mash: A Single-View Approach to Casual 3D Modeling and Animation”[Dvorožňák et al., 2020]. While teddy is good for modelling organic models like a plush toy, it is not very useful for modelling shapes with sharp features like a cube.
 
 In recent years, there have many papers that apply Deep learning to sketch based modelling.[Delanoy et al., 2018] predicts encodes 3D shape in a voxel representation and estimate the probability of each voxel to be occupied[Zhong., et al. 2020].
 
@@ -99,7 +99,8 @@ The algorithm for the Union method-
  
 ### <span style="text-decoration:underline;">Results</span>
 
-Overall, I would not say that my results are particularly new, as there are other programs out there that have more functions[Bae., et al. 2008], but most of them are discontinued or not commercially available. As far as blender goes, I could not find any tool that does what my implemented program does. 
+Overall, I would not say that my results are particularly new, as there are other programs out there that have more functions[Bae., et al. 2008], but most of them are discontinued or not commercially available. As far as blender goes, I could not find any tool that does what my implemented program does.
+A big aspect to work on is skething in a 3D canvas instead of a 2D canvas so that depth can be controlled by the user. 
 In its current state, the program lacks all the necessary tools to be a useful tool, but I believe that once I fix some inconsistencies and add a better way to control the depth of the created object, it can be a useful tool for concept artists and people new to 3D modelling software.
 
 I would say that I did not achieve the goals I set. I believe that the main reason is that I was not able to get any good results with my initial approach of utilizing deep learning, and thus I did not have much time left to experiment with blender to get satisfactory results.
