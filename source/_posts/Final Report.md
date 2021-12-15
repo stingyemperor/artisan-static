@@ -40,7 +40,7 @@ I also want to mention a new software which is currently in Beta but looks very 
 
 ### <span style="text-decoration:underline;">Implementation Details</span>
 
-I implemented the sketching interface in Blender for two reasons-
+I implemented the sketching interface in Blender for the following reasons-
 
 
 
@@ -99,16 +99,16 @@ The algorithm for the Union method-
 
 
 
-* Initially, I was trying to use a deep learning based which included training a GAN on 3D models based on [Wu et al., 2016] but I could not understand how to generalize it for free form shapes. So in order to have some results for this project, I decided to implement it in blender instead.
+* Initially, I was trying to use a deep learning based method which included training a GAN on 3D models based on [Wu et al., 2016] but I could not understand how to generalize it for free form shapes. So in order to have some results for this project, I decided to implement it in blender instead.
 * Blenders’s python API is poorly documented, so I had to experiment a lot in order to find how scripts were to be written
-* The trickiest case is when there are a bunch of overshot lines, and we need to be able to identify and ignore them. My current implementation does not work perfectly and sometimes there are some extra vertices remaining
+* The trickiest case is when there are a bunch of overshot lines and the sketch does not formn a closed loop, and we need to be able to identify and ignore them. My current implementation does not work perfectly and sometimes there are some extra vertices remaining
 
  
 ### <span style="text-decoration:underline;">Results</span>
 
-Overall, I would not say that my results are particularly new, as there are other programs out there that have more functions[Bae., et al. 2008], but most of them are discontinued or not commercially available. As far as blender goes, I could not find any tool that does what my implemented program does.
-A big aspect to work on is skething in a 3D canvas instead of a 2D canvas so that depth can be controlled by the user. 
-In its current state, the program lacks all the necessary tools to be a useful tool, but I believe that once I fix some inconsistencies and add a better way to control the depth of the created object, it can be a useful tool for concept artists and people new to 3D modelling software.
+Overall, I would not say that my results are particularly new, as there are other programs out there that have a simpler interface while providing more functionality[Bae., et al. 2008], but most of them are discontinued or not commercially available. As far as blender goes, I could not find any tool that does what my implemented program does.
+A big aspect I want to work on is sketching in a 3D canvas instead of a 2D canvas so that depth can be controlled by the user. 
+In its current state, the program lacks all the necessary tools to be a useful to an artist, but I believe that once I fix some inconsistencies and add a better way to control the depth of the created object, it can be a useful tool for concept artists and people new to 3D modelling software.
 
 I did not achieve the goals I set. I believe that the main reason is that I was not able to get any good results with my initial approach of utilizing deep learning, and thus I did not have much time left to experiment with blender to get satisfactory results.
 
