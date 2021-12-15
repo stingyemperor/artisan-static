@@ -8,10 +8,10 @@ comments: false
 
 ### <span style="text-decoration:underline;">Motivation</span>
 
-In recent years, digital painting programs like photoshop and clip studio paint  have been gaining popularity and the programs have been adding functionality to help users draw easily, for example adding perspective guidelines to help draw objects in perspective. One of the areas where I think the programs can improve is having 3d models for shading reference. Most programs do not provide this functionality or have limited functionality in this area, for example Clip studio paint provides 3d models, but the number of models are limited and there is no way to create custom models. Thus, an easy way 
+In recent years, digital painting programs like photoshop and clip studio paint  have been gaining popularity and the programs have been adding functionality to help users draw easily, for example adding perspective guidelines to help draw objects in perspective. One of the areas where I think the programs can improve is having 3d models for shading reference. Most programs do not provide this functionality or have limited functionality in this area, for example Clip studio paint provides 3d models, but the number of models are limited and there is no way to create custom models. Thus, a way for the user to easily create free-form 3D models would be very helpful.
 
 
-### <span style="text-decoration:underline;">Aim</span>
+### <span style="text-decoration:underline;">Objective</span>
 
 Create a 3-D modelling interface/system that closely resembles a 2-D sketching interface. More specifically, have methods to add an object based on the input sketch and cut parts from the created object. Optionally, add options to smoothen/sharpen the model. 
 
@@ -46,9 +46,9 @@ I implemented the sketching interface in Blender for two reasons-
 
 * Blender is free and is also used by many beginners
 * Blender has an embedded Python interpreter, so you can write python scripts to utilize the inbuilt tools
+* Blender has inbuilt toole like converting a curve to a mesh that can help in implementation
 
-For now, I have two working tools-
-
+For now, I have three working tools-
 
 
 * Convert the user's  2-D sketch to a mesh object
@@ -63,25 +63,32 @@ For now, I have two working tools-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ToFyUUjBiXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The algorithm for the Draw method-
 
+
+<img src="https://raw.githubusercontent.com/stingyemperor/artisan-static/master/source/_posts/images/image3.png" alt="drawing" width="400"/>
+
+Procedure for finding the overshot line-
+
+1. In most cases overshot lines are the shortest edges
+2. Select all points with four edges
+3. Delete the two shortest edges
+
+
+The algorithm for the Draw method-
 
 
 1. Convert GPencil object to a curve
 2. Convert the curve object to a mesh
-3. Remove vertices based on a threshold distance to help create faces
-4. Remove extra edges and vertices 
-5. Create faces 
-6. Use solidify modifier to add thickness
+3. Remove overshot lines
+4. Create faces 
+5. Use solidify modifier to add thickness
 
 The algorithm for the Subtract method-
-
 
 
 1. Join the end points of the user created curve
 2. Use the steps from the draw methods to create a mesh object with the same thickness 
 3. Use the Boolean difference operator to subtract the original mesh from the subtraction mesh
-
 
 
 The algorithm for the Union method-
@@ -94,7 +101,7 @@ The algorithm for the Union method-
 
 * Initially, I was trying to use a deep learning based which included training a GAN on 3D models based on [Wu et al., 2016] but I could not understand how to generalize it for free form shapes. So in order to have some results for this project, I decided to implement it in blender instead.
 * Blenders’s python API is poorly documented, so I had to experiment a lot in order to find how scripts were to be written
-* The trickiest case is when there are a bunch of overshot lines, and we need to be able to identify and ignore them. My current implementation does not work perfectly and sometimes are some extra edges remaining
+* The trickiest case is when there are a bunch of overshot lines, and we need to be able to identify and ignore them. My current implementation does not work perfectly and sometimes there are some extra vertices remaining
 
  
 ### <span style="text-decoration:underline;">Results</span>
@@ -103,9 +110,7 @@ Overall, I would not say that my results are particularly new, as there are othe
 A big aspect to work on is skething in a 3D canvas instead of a 2D canvas so that depth can be controlled by the user. 
 In its current state, the program lacks all the necessary tools to be a useful tool, but I believe that once I fix some inconsistencies and add a better way to control the depth of the created object, it can be a useful tool for concept artists and people new to 3D modelling software.
 
-I would say that I did not achieve the goals I set. I believe that the main reason is that I was not able to get any good results with my initial approach of utilizing deep learning, and thus I did not have much time left to experiment with blender to get satisfactory results.
-
-	
+I did not achieve the goals I set. I believe that the main reason is that I was not able to get any good results with my initial approach of utilizing deep learning, and thus I did not have much time left to experiment with blender to get satisfactory results.
 
 
 ### <span style="text-decoration:underline;">References</span>
